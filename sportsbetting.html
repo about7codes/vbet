@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="./img/logo/nc-favicon.png">
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/styles/sportsbetting.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/sb.js" defer></script>
+    
+    <title>Sports Betting</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="nav">
+            <div class="navlogo">
+                <a href="index.html"><img class="navlogo1" src="./img/logo/Logo.png" alt="site logo"></a>
+                <img class="navlogo2" src="./img/logo/arsenal.png" alt="arsenal">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="livebetting.html">LIVE BETTING</a></li>
+                <li class="nav-item"><a href="sportsbetting.html" class="cur-pg">SPORTS BETTING</a></li>
+                <li class="nav-item"><a href="casino.html">CASINO</a></li>
+                <li class="nav-item"><a href="livecasino.html">LIVE CASINO</a></li>
+                <li class="nav-item"><a href="games.html">GAMES</a><span class="new">NEW</span></li>
+                <li class="nav-item"><a href="virtual.html">VIRTUAL</a><span class="new">NEW</span></li>
+                <li class="nav-item"><a href="esp.html">ESPORTS</a></li>
+            </ul>
+
+            <div class="signin-container">
+                <a class="regBtn" href="#">REGISTER</a>
+                <a class="signBtn" href="#">SIGN IN</a>
+            </div>
+
+            <div id="menu" class="menu">&#9776;</div>
+
+            <div class="langs">
+                <div class="lang-container">
+                    <div id="lang1" class="lang lang1">
+                        <span><img src="./img/icons/en.svg" alt="US Flag icon"></span>
+                        <span>EN</span>
+                    </div>
+                    <ul id="lang2" class="lang-drop">
+                        <li class="lang">
+                            <span><img src="./img/icons/de.svg" alt="Flag icon"></span>
+                            <span>DE</span>
+                        </li>
+                        <li class="lang">
+                            <span><img src="./img/icons/tr.svg" alt="Flag icon"></span>
+                            <span>TR</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="navmob-container" class="navmob-container">
+        <div class="navmob-inner">
+            <div id="cross" class="cross">&#10006;</div>
+            <div class="navmob">
+                <div class="logo-container">
+                    <a href="index.html"><img src="./img/logo/Logo.png" alt="site logo"></a>
+                </div>
+                <ul class="navmob-list">
+                    <li class="navmob-item"><a href="sportsbetting.html">SPORT BETTING</a></li>
+                    <li class="navmob-item"><a href="livebetting.html">LIVE BETTING</a></li>
+                    <li class="navmob-item"><a href="casino.html">CASINO</a></li>
+                    <li class="navmob-item"><a href="livecasino.html">LIVE CASINO</a></li>
+                    <li class="navmob-item"><a href="games.html">GAMES<span>NEW</span></a></li>
+                    <li class="navmob-item"><a href="virtual.html">VIRTUAL<span>NEW</span></a></li>
+                    <li class="navmob-item"><a href="esp.html">ESPORTS</a></li>
+                </ul>
+                <div class="gift-container">
+                    <a href="#"><img src="./img/icons/gift.png" alt="gift box"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+
+        <!-- Sub Nav below --------------------------------------------- -->
+
+        <div class="subnav-container">
+            <span id="current-time">04:56:58 PM</span>
+
+            <ul class="subnav-list">
+                <li><a href="#">FANTASY SPORTS</a></li>
+                <li><a href="#">STATISTICS</a></li>
+                <li><a href="#">PROMOTIONS</a></li>
+            </ul>
+
+            <div class="odds-container">
+                <div class="odds-top">
+                    <p class="odds-head">Decimal</p>
+                    <span class="odds-arrowup">&#10095;</span>
+                </div>
+                <div class="odds-bottom">
+                    <div class="odds-item">
+                        <input type="radio" id="decimal" name="odds" value="decimal">
+                        <label for="decimal">Decimal</label>
+                    </div>
+                    <div class="odds-item">
+                        <input type="radio" id="fractional" name="odds" value="fractional">
+                        <label for="fractional">Fractional</label>
+                    </div>
+                    <div class="odds-item">
+                        <input type="radio" id="american" name="odds" value="american">
+                        <label for="american">American</label>
+                    </div>
+                    <div class="odds-item">
+                        <input type="radio" id="hongkong" name="odds" value="hongkong">
+                        <label for="hongkong">Hongkong</label>
+                    </div>
+                    <div class="odds-item">
+                        <input type="radio" id="malay" name="odds" value="malay">
+                        <label for="malay">Malay</label>
+                    </div>
+                    <div class="odds-item">
+                        <input type="radio" id="indo" name="odds" value="indo">
+                    <label for="indo">Indo</label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Content Section below --------------------------------------------- -->
+
+        <section class="section-content">
+            <div class="content-container">
+                <div class="sbt1" id="sbt1">
+
+                    <!-- Resize Tab -->
+                    <div class="resize-container">
+                        <div class="resize-inner">
+                            <img class="resize-icon" src="./img/icons/resize-ico.png" alt="resize icon">
+                        </div>
+                    </div>
+
+                    <!-- Sport Search Tab -->
+                    <div class="sports-search-container">
+                        <div class="sports-search">
+                            <div class="sports-search-top">
+                                <div class="sports-search-a" id="sports-search-a">
+                                    <a href="#" class="ss-a" id="ss-1">All</a>
+                                    <a href="#" id="ss-2"><img src="./img/icons/vid-ico.png" alt="video icon"></a>
+                                </div>
+                                <div class="sports-search-b">
+                                    <a href="#" class="ss-3"><img src="./img/icons/w-ico.png" alt="globe icon"></a>
+                                </div>
+                            </div>
+                            <div class="sport-search-field">
+                                <div class="sport-search-icon">
+                                    <img src="./img/icons/search-ico.png" alt="">
+                                </div>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Favourites Tab -->
+                    <div class="favor-container">
+                        <div class="favor-out">
+                            <div class="favor-inner" id="favor-inner">
+                                <div class="favor-1">
+                                    <img src="./img/icons/star-ico.png" alt="star icon">
+                                    <span>Favourites</span>
+                                </div>
+                                <div class="favor-2">
+                                    <span>0</span>
+                                    <span class="fav-arrow" id="favor-arrow">&#10095;</span>
+                                </div>
+                            </div>
+                            <div class="favor-sport fs-hide" id="favor-sport">
+                                <p>Click on the &#9733; to add it to Favourites</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top leagues tab -->
+                    <div class="tl-container">
+                        <div class="tl-out">
+                            <div class="tl-inner" id="tl-inner">
+                                <div class="tl-a">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Top Leagues</span>
+                                </div>
+                                <div class="tl-b">
+                                    <i class="fas fa-chevron-up" id="tl-arrow"></i>
+                                </div>
+                            </div>
+
+                            <div class="tl-list" id="tl-list">
+
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/football-black-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/football-black-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/football-black-ico.png" alt="">
+                                        <span>Premier League</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/football-black-ico.png" alt="">
+                                        <span>DFB Pokal</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/tabletennis-dark-ico.png" alt="">
+                                        <span>Ekstraklasa</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/icehockey-dark-ico.png" alt="">
+                                        <span>K League 1</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/volleyball-dark-ico.png" alt="">
+                                        <span>Superliga</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/tabletennis-dark-ico.png" alt="">
+                                        <span>China Dota2 League</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/football-black-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/icehockey-dark-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/tabletennis-dark-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/volleyball-dark-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/icehockey-dark-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tl-item">
+                                    <div class="tl-item-a">
+                                        <img src="./img/icons/volleyball-dark-ico.png" alt="">
+                                        <span>Bundesliga Specials</span>
+                                    </div>
+                                    <div class="tl-item-b">
+                                        <img src="./img/icons/de.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="te-container">
+                        <div class="te-inner">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Todays Events</span>
+                        </div>
+                    </div>
+
+                    <!-- Time Filter -->
+                    <div class="time-filter-container">
+                        <div class="time-filter-inner">
+                            <select class="time-filter">
+                                <option value="false">All</option>
+                                <option value="1">1 hour</option>
+                                <option value="2">2 hours</option>
+                                <option value="3">3 hours</option>
+                                <option value="6">6 hours</option>
+                                <option value="8">8 hours</option>
+                                <option value="12">12 hours</option>
+                                <option value="24">24 hours</option>
+                                <option value="48">48 hours</option>
+                                <option value="72">72 hours</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Sports List below -->
+                    <div class="games-list-container">
+                        <div class="games-list-inner">
+
+                            <div class="games-item-container">
+                                <div class="games-item-inner">
+                                    <div class="games-item-a" id="gia-1">
+                                        <div class="gi-a">
+                                            <img src="./img/icons/football-ico.png" alt="">
+                                            <span class="gi-a-name">Football</span>
+                                        </div>
+                                        <div class="gi-b">
+                                            <span class="gi-b-num">669</span>
+                                            <i class="fas fa-chevron-down gi-b-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <div class="games-item-b">
+
+                                        <div class="sub-games-list">
+                                            <div class="sub-games-list-inner">
+
+                                                <div class="sub-games-item">
+                                                    <div class="sub-games-item-inner">
+                                                        <div class="sub-games-item-a">
+                                                            <div class="sgi-a">
+                                                                <img src="./img/icons/de.svg" alt="">
+                                                                <span class="sgi-a-name">Germany</span>
+                                                            </div>
+                                                            <div class="sgi-b">
+                                                                <i class="fas fa-chevron-down sgi-b-arrow"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-games-item-b">
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-games-item">
+                                                    <div class="sub-games-item-inner">
+                                                        <div class="sub-games-item-a">
+                                                            <div class="sgi-a">
+                                                                <img src="./img/icons/de.svg" alt="">
+                                                                <span class="sgi-a-name">Germany</span>
+                                                            </div>
+                                                            <div class="sgi-b">
+                                                                <i class="fas fa-chevron-down sgi-b-arrow"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-games-item-b">
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="games-item-container">
+                                <div class="games-item-inner">
+                                    <div class="games-item-a" id="gia-2">
+                                        <div class="gi-a">
+                                            <img src="./img/icons/basketball-ico.png" alt="">
+                                            <span class="gi-a-name">Basketball</span>
+                                        </div>
+                                        <div class="gi-b">
+                                            <span class="gi-b-num">19</span>
+                                            <i class="fas fa-chevron-down gi-b-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <div class="games-item-b">
+
+                                        <div class="sub-games-list">
+                                            <div class="sub-games-list-inner">
+
+                                                <div class="sub-games-item">
+                                                    <div class="sub-games-item-inner">
+                                                        <div class="sub-games-item-a">
+                                                            <div class="sgi-a">
+                                                                <img src="./img/icons/de.svg" alt="">
+                                                                <span class="sgi-a-name">Germany</span>
+                                                            </div>
+                                                            <div class="sgi-b">
+                                                                <i class="fas fa-chevron-down sgi-b-arrow"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-games-item-b">
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-games-item">
+                                                    <div class="sub-games-item-inner">
+                                                        <div class="sub-games-item-a">
+                                                            <div class="sgi-a">
+                                                                <img src="./img/icons/de.svg" alt="">
+                                                                <span class="sgi-a-name">Germany</span>
+                                                            </div>
+                                                            <div class="sgi-b">
+                                                                <i class="fas fa-chevron-down sgi-b-arrow"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-games-item-b">
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="sgib-item">
+                                                                <div class="sgib-item-inner">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <span class="sgib-name">DFB Pokal</span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="sbt2" id="sbt2">
+                    <div class="eventlist-container">
+                        <div class="eventlist-inner">
+                            <div class="eventlist-header">
+                                <div class="eventlist-header-inner">
+                                    <div class="elh-a">
+                                        <div class="elh-a-left">
+                                            <span class="elh-a-name">Football</span>
+                                            <div class="elh-a-country">
+                                                <img class="elh-a-country-img" src="./img/icons/de.svg" alt="">
+                                                <span class="elh-a-country-name">England</span>
+                                            </div>
+                                        </div>
+                                        <div class="elh-a-right">
+                                            <select name="" id="">
+                                                <option value="Match Result">Match Result</option>
+                                                <option value="Double Chance">Double Chance</option>
+                                                <option value="Total Goals">Total Goals</option>
+                                                <option value="Asian">Asian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="elh-b">
+                                        <div class="elh-b-left">
+                                            <span>Premier League</span>
+                                        </div>
+                                        <div class="elh-b-right">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-block">
+                                <div class="event-block-inner">
+                                    <div class="event-block-head">
+                                        <span class="event-block-dt">Monday, 29 June 2020</span>
+                                        <span class="event-block-col">1</span>
+                                        <span class="event-block-col">X</span>
+                                        <span class="event-block-col">2</span>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="event-block">
+                                <div class="event-block-inner">
+                                    <div class="event-block-head">
+                                        <span class="event-block-dt">Tuesday, 30 June 2020</span>
+                                        <span class="event-block-col">1</span>
+                                        <span class="event-block-col">X</span>
+                                        <span class="event-block-col">2</span>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="event-block">
+                                <div class="event-block-inner">
+                                    <div class="event-block-head">
+                                        <span class="event-block-dt">Wednesday, 1 July 2020</span>
+                                        <span class="event-block-col">1</span>
+                                        <span class="event-block-col">X</span>
+                                        <span class="event-block-col">2</span>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="event-block">
+                                <div class="event-block-inner">
+                                    <div class="event-block-head">
+                                        <span class="event-block-dt">Thursday, 2 July 2020</span>
+                                        <span class="event-block-col">1</span>
+                                        <span class="event-block-col">X</span>
+                                        <span class="event-block-col">2</span>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="event-block">
+                                <div class="event-block-inner">
+                                    <div class="event-block-head">
+                                        <span class="event-block-dt">Saturday, 4 July 2020</span>
+                                        <span class="event-block-col">1</span>
+                                        <span class="event-block-col">X</span>
+                                        <span class="event-block-col">2</span>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-block-content">
+                                        <div class="event-block-ca">
+                                           <div class="eb-a">
+                                               <span class="eb-a-name">Crystal Palace</span>
+                                               <div class="eb-a-ico">
+                                                   <span class="eb-a-time">23:00</span>
+                                                   <img src="./img/icons/stats-ico.png" alt="">
+                                               </div>
+                                           </div> 
+                                           <div class="eb-b">
+                                            <span class="eb-b-name">Burnley</span>
+                                            <div class="eb-b-ico">
+                                                <span class="eb-b-num">+366</span>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                           </div> 
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                        <div class="event-block-box">
+                                            <span>2.36</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sbt3" id="sbt3">
+
+                    <div class="eventov-container">
+                        <div class="eventov-inner">
+                            <div class="eventov-a">
+                                <h3 class="eventov-a-head">UEFA Champions League</h3>
+                                <span class="eventov-a-dt">Friday, 7 August, 23:00</span>
+                            </div>
+                            <div class="eventov-b">
+                                <div class="eventov-b-in">
+                                    <span class="eventov-b-in-name">Bayern Munich</span>
+                                </div>
+
+                                <div class="eventov-b-mid">
+                                    <span class="eventov-b-in-name">VS</span>
+                                </div>
+
+                                <div class="eventov-b-in">
+                                    <span class="eventov-b-in-name">Chelsea</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eventhd-container">
+                        <div class="eventhd-a">
+                            <span>
+                                <span class="eventhd-a-country">Europe:</span>
+                                <span class="eventhd-a-league">UEFA Champions League:</span>
+                                <span class="eventhd-a-teams">Bayern Munich - Chelsea</span>
+                            </span>
+                        </div>
+                        <div class="eventhd-b">
+                            <div class="eventhd-b-stat">
+                                <img src="./img/icons/stats-ico.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event3-container">
+                        <div class="event3-inner">
+                            <div class="e-game-info">
+                                <img class="e-game-info-a" src="./img/icons/info-ico.png" alt="">
+                                <span class="e-game-info-b">
+                                  0 : 0, (0:0) 3ˋ 50 min. dirty time. Simulated Game, Different format
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event4-container">
+                        <div class="event4-inner">
+                            <div class="match-sort-container">
+                                <div class="match-btns">
+                                  <span class="match-btn"></span>
+                                  <span class="match-btn">All</span>
+                                  <span class="match-btn">Match</span>
+                                  <span class="match-btn">Handicaps</span>
+                                  <span class="match-btn">Totals</span>
+                                </div>
+                                <div class="match-columns">
+                                    <span class="match-col-a"></span>
+                                    <span class="match-col-b"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event5-container">
+                        <div class="event5-inner">
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Match Results</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-inner">
+                                        <div class="data-card">
+                                            <span class="data-card-top">Lille OSC Cyber</span>
+                                            <span class="data-card-bottom">1.93</span>
+                                        </div>
+                                        <div class="data-card data-card-mid">
+                                            <span class="data-card-top">Draw</span>
+                                            <span class="data-card-bottom">3.10</span>
+                                        </div>
+                                        <div class="data-card">
+                                            <span class="data-card-top">Stade Reims Cyber</span>
+                                            <span class="data-card-bottom">4.93</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Double Chance</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-inner">
+                                        <div class="data-card">
+                                            <span class="data-card-top">1 or Draw</span>
+                                            <span class="data-card-bottom">1.93</span>
+                                        </div>
+                                        <div class="data-card data-card-mid">
+                                            <span class="data-card-top">12</span>
+                                            <span class="data-card-bottom">3.10</span>
+                                        </div>
+                                        <div class="data-card">
+                                            <span class="data-card-top">2 or Draw</span>
+                                            <span class="data-card-bottom">4.93</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Draw No Bet</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-inner">
+                                        <div class="data-card">
+                                            <span class="data-card-top">Bayern Munich</span>
+                                            <span class="data-card-bottom">1.20</span>
+                                        </div>
+                                        <div class="data-card data-card-mid">
+                                            <span class="data-card-top">Chelsea</span>
+                                            <span class="data-card-bottom">4.40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Goals Handicaps</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                            <div class="data-card-head">
+                                                <span>Lille OSC Cyber</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-2.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-2)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-1.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(0)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                        </div>
+                                        <div class="data-card-container">
+                                            <div class="data-card-head">
+                                                <span>Stade Reims Cyber</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+2.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+2)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+1.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(0)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Goals Asian Handicap</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                            <div class="data-card-head">
+                                                <span>Lille OSC Cyber</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-2.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-2.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-1.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-1.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-0.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-0.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+0.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="data-card-container">
+                                            <div class="data-card-head">
+                                                <span>Stade Reims Cyber</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+2.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+2.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+1.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+1.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+0.75)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(+0.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">(-0.25)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Total Goals</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="data-card-container">
+                                            
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Total Goals Asian</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="data-card-container">
+                                            
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Lille OSC Cyber Total Goals</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="data-card-container">
+                                            
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-box-container">
+                                <div class="data-box-a">
+                                    <div class="data-box-a-inner">
+                                        <span class="data-head">Stade Reims Cyber Total Goals</span>
+                                        <div class="data-icons">
+                                            <img class="di-a" src="./img/icons/stats-ico.png" alt="">
+                                            <span class="di-b"><img src="./img/icons/link-ico.png" alt="">1</span>
+                                            <img class="di-c" src="./img/icons/money-ico.png" alt="">
+                                            <span class="di-d"></span>
+                                        </div>
+                                        <span class="data-arrow">&#10095;</span>
+                                    </div>
+                                </div>
+
+                                <div class="data-box-b">
+                                    <div class="data-box-b-content">
+                                        <div class="data-card-container">
+                                
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Over (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="data-card-container">
+                                            
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (1)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            <div class="data-card">
+                                                <span class="data-card-top">Under (0.5)</span>
+                                                <span class="data-card-bottom">1.93</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sbt4" id="sbt4">
+
+                    <div class="betslip-container">
+                        <div class="betslip-inner">
+                            <div class="betslip-a">
+                                <div class="betslip-a-head">
+                                    <span class="bets-title">Betslip</span>
+                                    <span class="bets-count">0</span>
+                                </div>
+                                <div class="betslip-a-sub">
+                                    <select>
+                                        <option value="Single">Single</option>
+                                        <option value="Multiple">Multiple</option>
+                                        <option value="System">System</option>
+                                        <option value="Chain">Chain</option>
+                                    </select>
+                                    <span class="bets-remove">Remove All</span>
+                                </div>
+                            </div>
+
+                            <div class="betslip-b">
+                                <div class="betslip-b-head">
+                                    <span class="bets-team">Natalia Selitskaya</span>
+                                    <div class="bets-ico">
+                                        <i class="fas fa-info-circle"></i>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+                                <div class="betslip-b-sub">
+                                    <div class="betslip-b-a">
+                                        <span class="bets-mr">Match Result</span>
+                                        <span>4.40</span>
+                                    </div>
+                                    <div class="betslip-b-a">
+                                        <span>W1 - Werden Bremen</span>
+                                        <span class="bets-num">4.60</span>
+                                    </div>
+                                    <div class="betslip-b-b">
+                                        <div class="bets-left">
+                                            <span>Stake</span>
+                                            <div class="bets-left-down">
+                                                <span>Tax:</span>
+                                                <span>0</span>
+                                            </div>
+                                        </div>
+                                        <div class="bets-right">
+                                            <input type="number" placeholder="0">
+                                        </div>
+                                    </div>
+
+                                    <div class="betslip-b-c">
+                                        <span>Total Stake:</span>
+                                        <span class="bets-num">0</span>
+                                    </div>
+                                    <div class="betslip-b-c">
+                                        <span>Possible Win:</span>
+                                        <span class="bets-num">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="betslip-c">
+                                <div class="betslip-c-head">
+                                    <div class="betslip-c-a">
+                                        <span>Number of Bets:</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="betslip-c-a">
+                                        <span>Total Stake:</span>
+                                        <span>0.00</span>
+                                    </div>
+                                    <div class="betslip-c-a">
+                                        <span>Stake:</span>
+                                        <span>0.00</span>
+                                    </div>
+                                    <div class="betslip-c-a">
+                                        <span>Tax Amount:</span>
+                                        <span>0.00</span>
+                                    </div>
+                                    <div class="betslip-c-a">
+                                        <span>Total Win:</span>
+                                        <span class="bets-num">0.00</span>
+                                    </div>
+                                </div>
+                                <div class="betslip-c-sub">
+                                    <a href="#">Sign In and Bet</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section below ---------------------------------------------- -->
+
+    <footer class="footer-section">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <img src="./img/logo/arsenal.png" alt="Arsenal FC">
+                </div>
+                <div class="footer-top-right">
+                    <img class="client1" src="./img/footer/clients1.png" alt="Payment outlet">
+                    <img class="client2" src="./img/footer/clients2.png" alt="Payment outlet">
+                </div>
+            </div>
+
+            <div class="footer-mid">
+                <div class="footer-mid-left">
+                    <div class="footer-links">
+                        <h4>ABOUT</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Responsible Gaming</a></li>
+                            <li><a href="#">General Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Bonus Terms and Conditions</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Our Betshops</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sport Betting Rules</a></li>
+                            <li><a href="#">Counter Offer</a></li>
+                            <li><a href="#">Esports Betting Rules</a></li>
+                            <li><a href="#">Games Rules</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>STATISTICS</h4>
+                        <ul>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Live Calendar</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>PRODUCTS</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Responsible Gaming</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mid-right">
+                    <div class="mob-apps">
+                        <h4>MOBILE APPS</h4>
+                        <div class="app-icons">
+                            <a href="#"><img src="./img/footer/app1.png" alt=""></a>
+                            <a href="#"><img src="./img/footer/app2.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="other-links">
+                        <a href="#" class="chat-btn">Chat now</a>
+                        <h2>18+</h2>
+                        <p class="copyright">© 2003 - 2020 Nextcalibur</p>
+                        <div class="socials">
+                            <h4>Follow Us</h4>
+                            <ul class="socials-list">
+                                <li><a href="#"><img src="./img/icons/social-1.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/icons/social-2.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/icons/social-3.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="langs-mob">
+                <h4>LANGUAGES: </h4>
+                <div class="lang-mob-container">
+                    <div id="lang3" class="lang lang1" >
+                        <span><img src="./img/icons/en.svg" alt="US Flag icon"></span>
+                        <span>EN</span>
+                    </div>
+                    <ul id="lang4" class="lang-drop"  >
+                        <li class="lang">
+                            <span><img src="./img/icons/de.svg" alt="Flag icon"></span>
+                            <span>DE</span>
+                        </li>
+                        <li class="lang">
+                            <span><img src="./img/icons/tr.svg" alt="Flag icon"></span>
+                            <span>TR</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span><img class="holmark1" src="./img/footer/holmark.png" alt=""></span>
+                    <a href="#"><img class="holmark2" src="./img/footer/holmark2.png" alt=""></a>
+                    <a href="#"><img class="holmark3" src="./img/footer/holmark3.png" alt=""></a>
+                    
+                </div>
+                <div class="footer-bottom-right">
+                    <p>
+                        Nextcalibur is operated by Nextcalibur Technology (Company Registration №C99999, Malta, 20.10.2009), having its registered address at Luxe Pavilion, 2nd level, Diamonds International Building, Portomaso, St. Julians STJ 4010, Malta, and is licensed and regulated by the Malta Gaming Authority as the regulatory body responsible (Gaming Service Licence № MGA/B2C/292/2015, issued 01.08.2018). Please note that gambling can be addictive. Play responsibly. For further information on gambling addiction contact www.begambleaware.org.
+                    </p>
+                    <p>Under 18s are strictly forbidden from gambling on this website. Underage gambling is an offence</p>
+                    <p>© Nextcalibur.de 2020 | Gambling can be addictive, please play responsibly.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

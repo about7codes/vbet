@@ -1,0 +1,122 @@
+@import '../variables';
+
+body{
+    background: linear-gradient(90deg, rgb(102, 22, 100) 0%, rgb(42, 8, 71) 100%);
+    color: $white;
+}
+
+
+.nav-container, .footer-section{
+    background-color: rgba(0, 0, 0, .3);
+}
+.lang-drop{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+
+.maingames{
+    &-inner{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+}
+
+.maingames-head{
+    margin-bottom: 50px;
+    &-inner{
+        text-align: center;
+
+        .maingames-htext{
+            font-family: 'Bebas Neue', cursive;
+            font-style: italic;
+            font-size: 42px;
+            margin: 0;
+            line-height: 60px;
+            letter-spacing: 2px;
+        }
+        .maingames-hsub{
+            margin: 0;
+            font-size: 28px;
+        }
+    }
+}
+
+.rectgames{
+    &-inner{
+        max-width: 1640px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+.rectitem{
+    margin: 0 10px 20px 10px;
+    @media only screen and (max-width: $breakpoint-phone){
+        margin: 0 4px 20px 4px;
+    }
+    &-inner{
+        width: 252px;
+        height: 407px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 6px;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+        @media only screen and (max-width: $breakpoint-phone){
+            width: 145px;
+            height: 234px;
+        }
+        .rectitem-img{
+            img{
+                width: 100%;
+                transition: all .3s ease-in-out;
+                // object-fit: cover;
+                
+            }
+        }
+        .rectitem-dets{
+            padding: 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-title{
+                // display: block;
+                text-align: center;
+                font-size: 17.5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2.85px;
+            }
+            &-btn{
+                
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: 0;
+                padding: 10px 30px;
+                border: 1px solid $white;
+                border-radius: 4px;
+                @media only screen and (max-width: $breakpoint-phone){
+                    padding: 5px 15px;
+                    font-size: 12px;
+                }
+                &:hover{
+                    background-color: $base-con;
+                    border-color: $base-con;
+                }
+            }
+        }
+        &:hover{
+            .rectitem-img img{
+                transform: scale(1.02);
+            }
+        }
+    }
+}

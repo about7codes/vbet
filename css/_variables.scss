@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+$base-color: #170A34;
+$nav-color : #1D184E;
+$sub-color: #373168;
+$alt-color: #2f2b59;
+// $shade-color: #15092F;
+$shade-color: #170A34;
+$white: #fff;
+$alt-white: #F6F6F6;
+$site-width: 1800px;
+$breakpoint-tablet: 1000px;
+$breakpoint-phone: 800px;
+$breakpoint-phone-md: 600px;
+$base-con: #d8288f;
+$pre-con: #a72067;
+$slide : #075861;
+
+
+$si-0 : #6b80da;
+$si-1 : #1ba573;
+$si-2 : #e67e39;
+$si-3 : #0c6ab3;
+$si-4 : #918560;
+$si-5 : #b8d4e6;
+$si-6 : #0c82b3;
+$si-7 : #70c2a7;
+$si-8 : #c28503;
+$si-9 : #d32939;
+$si-10 : #a93844;
+$si-11 : #37b764;
+$si-12 : #37b764;
+$si-13 : #37b764;
+
+$sb-1: #ededf2;
+$sb-2: #000;
+$sb-3: #c38a2c;
+$sb-4: #d5d5da;
+$sb-5: #ebf3fc;
+$sb-6: #0167e8;
+$sb-7: rgba(209,209,219,.9);
+$sb-8: rgba(0,0,0,.79);
+$sb-9: rgba(188,188,197,.9);
+$sb-10: #333;
+$sb-11: #707070;
+$sb-12: #c4a366;
+$sb-13: #D5D5DE;
+$sb-14: #e6b44f;
+$sb-15: rgba(51,51,51,.79);
+$sb-16: rgba(0, 0, 0, 0.6);
+$sb-17: #e44a3f;
+$sb-18: rgba(0, 0, 0, 0.3);
+$sb-19: rgba(255, 255, 255, 0.6);
+$sb-20: rgba(255, 255, 255, 0.25);
+$sb-21: rgba(255, 255, 255, 0.5);
+$sb-22: rgba(255, 255, 255, 0.8);
+$sb-23: #c4d9f2;
+$sb-24: rgba(77,77,77,.79);
+$sb-25: #dfdfdf;
+$sb-26: rgb(254, 203, 90);
+
+
+
+.sbi-arrow{
+    transform: rotate(-90deg) scaleX(-1) !important;
+}
+.flip-arrow{
+    transform: scaleY(-1) !important;
+}
+
+.sb-none{
+    display: none !important;
+}
+.mo-height{
+    max-height: 200px;
+    // height: 100%;
+    overflow-y: auto;
+    scrollbar-color: rgba(#F6F6F6, 0.2) transparent;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(#F6F6F6, 0.2);
+    border-radius: 4px; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #E0DFE4; 
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $alt-white; 
+    }
+}
+
+
+@mixin flex-it($aic: center, $jc: space-between) {
+    display: flex;
+    align-items: $aic;
+    justify-content: $jc;
+}
+@mixin ellipsis-it() {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

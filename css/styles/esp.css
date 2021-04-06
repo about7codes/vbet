@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.sbi-arrow {
+  -webkit-transform: rotate(-90deg) scaleX(-1) !important;
+          transform: rotate(-90deg) scaleX(-1) !important;
+}
+
+.flip-arrow {
+  -webkit-transform: scaleY(-1) !important;
+          transform: scaleY(-1) !important;
+}
+
+.sb-none {
+  display: none !important;
+}
+
+.mo-height {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-color: rgba(246, 246, 246, 0.2) transparent;
+}
+
+.mo-height::-webkit-scrollbar {
+  width: 7px;
+}
+
+.mo-height::-webkit-scrollbar-track {
+  background: rgba(246, 246, 246, 0.2);
+  border-radius: 4px;
+}
+
+.mo-height::-webkit-scrollbar-thumb {
+  background: #E0DFE4;
+  border-radius: 10px;
+}
+
+.mo-height::-webkit-scrollbar-thumb:hover {
+  background: #F6F6F6;
+}
+/*# sourceMappingURL=esp.css.map */

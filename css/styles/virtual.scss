@@ -1,0 +1,783 @@
+@import '../variables';
+
+
+body{
+    min-height: 100vh;
+    background-color: $base-color;
+    color: $white;
+}
+*{box-sizing: border-box;}
+
+
+.virtu-main{
+    &-inner{
+        padding-bottom: 50px;
+    }
+}
+
+// Page Divide 
+
+.virtu-content{
+    &-inner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @media only screen and (max-width: $breakpoint-tablet){
+            flex-direction: column 
+        }
+        .virtu-content-a{
+            flex-basis: 83.33333%;
+            max-width: 83.33333%;
+            @media only screen and (max-width: $breakpoint-tablet){
+                max-width: 100%;
+            }
+        }
+        .virtu-content-b{
+            flex-basis: 16.66667%;
+            max-width: 16.66667%;
+            @media only screen and (max-width: $breakpoint-tablet){
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+// Virtu Content A Side ---------------------------------------------------------------------------------------
+// Virtual Sub Nav tabs styles below 
+
+.virtu-sub{
+    background-color: $white;
+    &-inner{
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        .virtu-sub-a{
+            background-color: $base-con;
+            color: $white;
+            padding: 10px 40px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: $base-con;
+                color: $white;
+            }
+        }
+        .virtu-sub-b{
+            color: $base-color;
+            padding: 10px 40px;
+            transition: all .2s ease-in-out;
+            &:hover{
+                background-color: $base-con;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+// Virtual content A side Styles below
+
+// Glider JS CSS Start
+
+.glider-contain {
+    /* width: 100%; */
+    margin: 0 auto;
+    position: relative;
+  }
+  .glider {
+    margin: 0 auto;
+    position: relative;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transform: translateZ(0);
+  }
+  .glider-track {
+    transform: translateZ(0);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+  }
+  .glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .glider.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none;
+  }
+  .glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .glider-slide {
+    user-select: none;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+//   .glider-slide img {
+//     max-width: 100%;
+//     height: 100%;
+//   }
+  .glider::-webkit-scrollbar {
+    opacity: 0;
+    height: 0;
+  }
+  .glider-prev,.glider-next {
+    user-select: none;
+    position: absolute;
+    outline: none;
+    background: none;
+    // border-radius: 4px;
+    padding: 0 5px;
+    z-index: 2;
+    font-size: 20px;
+    height: 100%;
+    text-decoration: none;
+    left: -46px;
+    border: 0;
+    top: -1px;
+    cursor: pointer;
+    color: #666;
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
+                color .5s cubic-bezier(.17,.67,.83,.67);
+  }
+  .glider-prev:hover,
+  .glider-next:hover,
+  .glider-prev:focus,
+  .glider-next:focus {
+    color: #a89cc8;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .glider-next {
+    right: -45px;
+    left: auto;
+  }
+  .glider-next.disabled,
+  .glider-prev.disabled {
+    opacity: .25;
+    color: #fff;
+    cursor: default;
+  }
+  .glider-slide {
+    min-width: 150px;
+  }
+  .glider-hide {
+    opacity: 0;
+  }
+  .glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .glider-dot {
+    background: none;
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+    margin: 7px;
+  }
+  .glider-dot:hover,
+  .glider-dot:focus,
+  .glider-dot.active {
+    background: #a89cc8;
+  }
+  @media(max-width: 36em){
+    .glider::-webkit-scrollbar {
+      opacity: 1;
+      -webkit-appearance: none;
+      width: 7px;
+      height: 3px;
+    }
+    .glider::-webkit-scrollbar-thumb {
+      opacity: 1;
+      border-radius: 99px;
+      background-color: rgba(156, 156, 156, 0.25);
+      box-shadow: 0 0 1px rgba(255,255,255,.25);
+    }
+  }
+  
+
+// Glider JS CSS End
+
+
+// Virtual Slider / Vslider styles below
+
+.vslider{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+    width: 727px;
+    height: 52px;
+    // border-radius: 4px;
+    // overflow: hidden;
+    // padding: 0 40px;
+    &-inner{
+        height: 100%;
+    }
+    .vslider-prev{
+        background-color: $slide;
+        border: 1px solid $white;
+        width: 46px;
+        height: 52px;
+        border-radius: 4px 0 0 4px;
+    }
+    .vslider-next{
+        background-color: $slide;
+        border: 1px solid $white;
+        width: 46px;
+        height: 52px;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.vslide{
+    padding: 10px;
+    height: 100%;
+    background-color: $slide;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $white;
+    &-img{
+        height: 15px;
+        margin-bottom: 3px;
+    }
+    &-title{
+        font-size: 11px;
+    }
+    &:hover{
+        background-color: darken($slide, 5%);
+    }
+}
+
+
+// Virtual video styles below
+
+.sport-vid{
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    &.inc-width{
+        width: 1120px;
+    }
+    &-inner{
+        .sport-video{
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 10px;
+            &-inner{
+                width: 100%;
+                outline: none;
+                display: block;
+                
+            }
+            &:hover{
+                .sport-video-controls{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+
+.sport-video-controls{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .svc-mute{
+        &:hover::before{color: $base-con;}
+        &::before{
+            content: '\f028';
+            font-family: 'Font Awesome 5 Free';
+            // width: 30px;
+            // height: 30px;
+            display: inline-block;
+            font-size: 18px;
+            color: $white;
+            font-weight: 900;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+        }
+        &.on:before{
+            content: '\f028';
+        }
+        &.off:before{
+            content: '\f6a9';
+        }
+    }
+    .svc-exp{
+        &:hover::before{color: $base-con;}
+        &::before{
+            content: '\f065';
+            font-family: 'Font Awesome 5 Free';
+            display: inline-block;
+            font-size: 18px;
+            color: $white;
+            font-weight: 900;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+        }
+        &.exp-bg:before{
+            content: '\f065';
+        }
+        &.exp-sm:before{
+            content: '\f066';
+        }
+    }
+    
+}
+
+
+.sport-bar{
+    background-color: $sb-25;
+    padding: 10px;
+    border-radius: 4px;
+    &-inner{
+        font-size: 14px;
+        display: flex;
+        text-align: center;
+        .sport-bar-a{
+            background-color: $sb-17;
+            padding: 9px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:last-child:hover{
+                background-color: $white;
+                color: $sb-17;
+            }
+        }
+        .sport-bar-b{
+            background-color: $sb-24;
+            flex: 1;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+// Virtual Event Details styles below
+
+.vv-det{
+    background-color: $sb-7;
+    max-width: 820px;
+    margin: 0 auto;
+    border-radius: 4px;
+    &-inner{
+
+    }
+}
+
+.vv-a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    &-title{
+        color: $sb-15;
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        &-li{
+            background-color: $sb-7;
+            color: $sb-15;
+            margin-left: 10px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            &.select{
+                background-color: $sb-3;
+                color: $white;
+            }
+        }
+    }
+}
+
+.vv-b{
+    padding: 5px 10px;
+    background-color: lighten($base-con, 16%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &-text{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.vv-c{
+    display: flex;
+    padding: 5px;
+    &-item{
+        background-color: $sb-1;
+        color: $sb-2;
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-right: 5px;
+        border-radius: 4px;
+        border-top: 3px solid transparent;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &.select{
+            border-top: 3px solid $sb-3;
+            background-color: $white;
+        }
+        &:hover{
+            border-top: 3px solid $sb-3;
+            background-color: $white;
+        }
+        &-fav{
+            padding: 0 14px;
+        }
+    }
+}
+
+
+
+.vv-d{
+    padding: 5px;
+    &-inner{
+
+    }
+}
+
+.v-box-container{
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.v-box-a{
+    background-color: $sb-1;
+    color: $sb-16;
+    &-inner{
+        @include flex-it;
+        position: relative;
+        height: 34px;
+        padding: 10px 40px 10px 10px;
+        .v-head{
+            font-size: 13px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .v-icons{
+            &-fav{
+                cursor: pointer;
+                &:hover{
+                    color: $sb-2;
+                }
+            }
+        }
+        .v-icons-arrow{
+            position: absolute;
+            right: 0;
+            position: absolute;
+            padding: 5px 10px;
+            right: 0px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            right: 32px;
+            width: 1px;
+            height: 34px;
+            background-color: #d5d5da;
+        }
+    }
+}
+
+
+.v-box-b{
+    background-color: $white;
+    color: $sb-10;
+    &-inner{
+        width: 100%;
+        font-size: 13px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        tbody{
+            .v-box-row{
+                border-top: 1px solid $sb-7;
+                td{
+                    padding: 8px 10px 8px 10px;
+                    border-right: 1px solid $sb-7;
+                    cursor: pointer;
+                    .v-box-card{
+                        @include flex-it;
+                        .v-box-tm{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        .v-box-sr{
+                            color: $sb-6;
+                        }
+                    }
+                    &:hover{
+                        background-color: $sb-23;
+                        .v-box-card{
+                            .v-box-sr{
+                                color: $sb-10;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.vv-e{
+    background-color: $sb-7;
+    margin-top: 20px;
+    border-radius: 0 0 4px 4px;
+    &-inner{
+        &-text{
+            line-height: 1.5;
+            padding: 10px 5px;
+            font-size: 13px;
+            font-weight: 400;
+            text-align: center;
+            color: $sb-10;
+            margin: 0;
+            opacity: .7;
+        }
+    }
+}
+
+
+
+// Virtu Content B Side ------------------------------------------------------------------------------------------------------------
+
+.virtu-content-b{
+    padding-top: 50px;
+    &-inner{
+        padding-right: 20px;
+        position: sticky;
+        top: 0;
+    }
+}
+
+// Betslip styles below ****
+
+.betslip-container{
+    margin: 3px;
+    .bets-num{
+        color: $sb-6;
+    }
+}
+
+.betslip-a{
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    &-head{
+        background-color: $sub-color;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        color: $white;
+        .bets-title{
+            font-size: 12px;
+        }
+        .bets-count{
+            width: 16px;
+            height: 16px;
+            font-size: 8px;
+            margin-left: 3px;
+            background-color: $sb-3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-sub{
+        background-color: $sb-7;
+        padding: 9px 8px 9px 5px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        select{
+            border: 0;
+            height: 22px;
+            border-radius: 4px;
+            background-color: $sb-1;
+            font-size: 12px;
+            outline: 0;
+        }
+        .bets-remove{
+            cursor: pointer;
+            transition: all .5s ease;
+            color: $sb-10;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+}
+
+
+.betslip-b{
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 12px;
+    &-head{
+        background-color: $sb-1;
+        color: $sb-8;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        .bets-ico{
+            font-size: 16px;
+            i{
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+    &-sub{
+        background-color: $sb-7;
+        color: $sb-10;
+        padding: 8px;
+        .betslip-b-a{
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            .bets-mr{
+                font-weight: 500;
+                color: $sb-11;
+            }
+        }
+        .betslip-b-b{
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .betslip-b-c{
+            display: flex;
+            justify-content: flex-end;
+            span{
+                margin-left: 5px;
+            }
+            + .betslip-b-c{
+                border-top: 1px solid $sb-9;
+                margin-top: 6px;
+                padding-top: 6px;
+            }
+        }
+    }   
+        
+}
+
+
+.bets-left{
+    &-down{
+        font-size: 11px;
+    }
+}
+.bets-right{
+    input{
+        box-shadow: none;
+        font-size: 12px;
+        height: 30px;
+        width: 60px;
+        border-radius: 4px;
+        border: 0;
+        outline: 0;
+        padding: 0 8px;
+        text-align: right;
+        -moz-appearance: textfield;
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+
+.betslip-c{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+    &-head{
+        background-color: $sb-7;
+        color: $sb-10;
+        padding: 8px;
+        div:last-child{
+            border-top: 1px solid $sb-9;
+            padding-top: 5px;
+            
+        }
+        .betslip-c-a{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+        }
+    }
+    &-sub{
+        padding: 5px;
+        background-color: $sb-1;
+        border-radius: 0 0 4px 4px;
+        a{
+            display: block;
+            background-color: $base-con;
+            text-align: center;
+            font-size: 16px;
+            padding: 9px 0;
+            &:hover{
+                background-color: $sb-12;
+            }
+        }
+    }
+}

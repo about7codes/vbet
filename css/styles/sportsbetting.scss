@@ -1,0 +1,1300 @@
+@import '../variables';
+
+
+.height-off{
+    max-height: 0px !important;
+    overflow: hidden;
+}
+
+.flip-on{
+    transform: scaleY(-1);
+}
+
+.disp-on{
+    display: block !important;
+}
+
+// Section Content styles below ***************************************************************
+
+.section-content{
+    width: 100%;
+    height: 100vh;
+    @media only screen and (max-width: $breakpoint-tablet){
+        height: 100%;
+    }
+    .content-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @media only screen and (max-width: $breakpoint-tablet){
+            flex-direction: column;
+        }
+        .sbt1{
+            flex-basis: 16vw;
+            width: 16vw;
+            // min-width: 50px;
+            // background-color: grey;
+            overflow-y: auto;
+            background-color: $alt-white;
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track {
+                background: $alt-white; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #E0DFE4; 
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: $alt-white; 
+            }
+            @media only screen and (max-width: $breakpoint-tablet){
+                flex-basis: auto;
+                width: auto;
+                overflow-y: visible;
+            }
+        }
+        .sbt2{
+            flex-basis: 34vw;
+            width: 34vw;
+            // min-width: 50px;
+            padding: 0 3px;
+            overflow-y: auto;
+            background-color: $alt-white;
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track {
+                background: $alt-white; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #E0DFE4; 
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: $alt-white; 
+            }
+            @media only screen and (max-width: $breakpoint-tablet){
+                flex-basis: auto;
+                width: auto;
+                overflow-y: visible;
+            }
+        }
+        .sbt3{
+            flex-basis: 34vw;
+            width: 34vw;
+            // min-width: 50px;
+            background-color: $sb-4;
+            padding: 0 3px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track {
+                background: $alt-white; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #E0DFE4; 
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: $alt-white; 
+            }
+            @media only screen and (max-width: $breakpoint-tablet){
+                flex-basis: auto;
+                width: auto;
+                overflow-y: visible;
+            }
+        }
+        .sbt4{
+            flex-basis: 16vw;
+            width: 16vw;
+            // min-width: 50px;
+            background-color: $alt-white;
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track {
+                background: $alt-white; 
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #E0DFE4; 
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb:hover {
+                background: $alt-white; 
+            }
+            @media only screen and (max-width: $breakpoint-tablet){
+                flex-basis: auto;
+                width: auto;
+                overflow-y: visible;
+            }
+        }
+    }
+}
+
+
+
+// sbt1 or Sports bettingTab Column 1 styles below **************************************************
+
+// column resize styles 
+
+.resize-container{
+    height: 40px;
+    margin-bottom: 10px;
+    .resize-inner{
+        margin: 3px;
+        border-radius: 4px;
+        height: 100%;
+        background-color: $sub-color;
+        text-align: right;
+        .resize-icon{
+            cursor: pointer;
+            padding-top: 5px;
+            height: 60%;
+            transition: padding .2s ease-in-out;
+            &:hover{
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+// search box below
+
+.sports-search-container{
+    margin-bottom: 10px;
+    .sports-search{
+        margin: 3px;
+        border-radius: 4px;
+        background-color: $sub-color;
+        .sports-search-top{
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            img{
+                width: 15px;
+            }
+        }
+    }
+}
+
+.sports-search-a{
+    display: flex;
+    align-items: center;
+    background-color: darken($sub-color, 5%);
+    margin-right: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+    a{
+        opacity: .3;
+        padding: 2px 8px;
+        padding-top: 3px;
+        transition: all .3s ease;
+        &:hover{
+            background-color: darken($sub-color, 10%);
+            opacity: 1;
+        }
+    }
+    
+}
+
+.ss-a{
+    background-color: darken($sub-color, 10%) !important;
+    opacity: 1 !important;
+}
+
+.sports-search-b{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    background-color: darken($sub-color, 5%);
+    border-radius: 4px;
+    a{
+        border-radius: 4px;
+        padding: 0 8px;
+        padding-top: 2px;
+        opacity: .3;
+        transition:  all .3s ease;
+        &:hover{
+            background-color: darken($sub-color, 10%);
+            opacity: 1;
+        }
+    }
+}
+
+.sport-search-field{
+    position: relative;
+    input{
+        outline: 0;
+        margin: 5px;
+        padding: 7px 30px;
+        border: 0;
+        border-radius: 4px;
+        font-size: 13px;
+        width: calc(100% - 70px);
+    }
+    .sport-search-icon img{
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 15px;
+        
+    }
+}
+
+// Favourites styles below
+
+.favor-container{
+    margin-bottom: 15px;
+    .favor-out{
+        margin: 3px;
+        border-radius: 4px;
+        border: 3px solid $sub-color;
+        overflow: hidden;
+        .fs-hide{
+            height: 0;
+        }
+        .favor-sport{
+            p{
+                font-size: 13px;
+                text-align: center;
+                margin: 0;
+                padding: 7px;
+                color: rgba(0,0,0,.79);
+                
+            }
+        }
+    }
+    .favor-inner{
+        height: 40px;
+        background-color: $sub-color;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 13px;
+        user-select: none;
+    }
+}
+
+.favor-1{
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+.favor-2{
+    margin-right: 10px;
+    .fs-arrow{
+        transform: rotate(90deg) scaleX(-1) !important;
+    }
+    .fav-arrow{
+        transition: all .3s ease-in-out;
+        transform: rotate(90deg);
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+
+// Top leagues styles below 
+
+.tl-container{
+    margin-bottom: 15px;
+    .tl-out{
+        margin: 3px;
+        font-size: 13px;
+    }
+}
+
+
+.tl-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $sub-color;
+    color: $white;
+    padding: 8px 10px 9px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    .tl-a{
+        display: flex;
+        align-items: center;
+        i{
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    }
+    .tl-b{
+        i{
+            transition: all .3s ease-in-out;
+        }
+    }
+
+}
+
+.tl-list{
+    max-height: 1000px;
+    transition: max-height .5s ease-in-out;
+    overflow-y: auto;
+    scrollbar-color: rgba($sb-11, 0.2) transparent;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $alt-white; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #E0DFE4; 
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $alt-white; 
+    }
+    .tl-item{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        border-left: 4px solid $sub-color;
+        border-radius: 4px;
+        padding: 8px 10px 7px 9px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &-a{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            img{
+                margin-right: 5px;
+                width: 15px;
+                transition: all .3s ease-in-out;
+            }
+            span{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &-b{
+            img{
+                width: 15px;
+            }
+        }
+        &:hover{
+            background-color: $sub-color;
+            color: $white;
+            .tl-item-a{
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+
+// Todays Events Styles below 
+
+.te-container{
+    margin-bottom: 10px;
+    .te-inner{
+        margin: 3px;
+        font-size: 15px;
+        color: $white;
+        background-color: $sub-color;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        i{
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        span{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
+// Time Filter Styles below 
+
+
+.time-filter-container{
+    margin-bottom: 5px;
+    .time-filter-inner{
+        margin: 3px;
+        .time-filter{
+            font-family: 'Roboto', sans-serif;
+            width: 100%;
+            height: 33px;
+            border-radius: 4px;
+            outline: 0;
+            border: 1px solid black;
+            
+        }
+    }
+}
+
+
+// Games List Styles below 
+
+#gia-1{
+    border-left: 4px solid $si-1;
+    &:hover{
+        background-color: $si-1;
+    }
+}
+#gia-2{
+    border-left: 4px solid $si-2;
+    &:hover{
+        background-color: $si-2;
+    }
+}
+
+.games-list-container{
+    margin-bottom: 10px;
+    .games-list-inner{
+        margin: 3px;
+        font-size: 13px;
+        
+    }
+}
+
+.games-item-container{
+    margin-bottom: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.games-item-a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $sub-color;
+    color: $white;
+    height: 35px;
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    .gi-a{
+        display: flex;
+        align-items: center;
+        img{
+            width: 15px;
+            margin-right: 5px;
+        }
+    }
+    .gi-b{
+        i{
+            margin-left: 5px;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.games-item-b{
+    background-color: $sb-7;
+    padding: 5px;
+    display: none;
+    animation: fadeOn 0.5s ease forwards;
+}
+
+.sub-games-item{
+    margin-bottom: 5px;
+}
+
+.sub-games-item-inner{
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sub-games-item-a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 0 10px;
+    background-color: $white;
+    user-select: none;
+    cursor: pointer;
+    .sgi-a{
+        display: flex;
+        align-items: center;
+        img{
+            width: 15px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.sub-games-item-b{
+    background-color: $sb-9;
+    padding: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.sgib-item{
+    background-color: $white;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    animation: fadeOn .5s ease forwards;
+    &-inner{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        i{
+            opacity: .6;
+            font-size: 16px;
+            margin-right: 5px;
+            transition: opacity .3s ease-in-out;
+            &:hover{
+               opacity: 1; 
+            }
+        }
+    }
+}
+
+
+
+// sbt2 or Sports bettingTab Column 2 styles below **************************************************
+
+
+// Event list styles below 
+.eventlist-inner{
+    margin-top: 3px;
+}
+
+.eventlist-header{
+    background-color: $sub-color;
+    color: $white;
+    border-radius: 4px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.elh-a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 40px;
+    &-left{
+        .elh-a-name{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .elh-a-country{
+            display: flex;
+            align-items: center;
+            &-img{
+                width: 16px;
+                margin-right: 5px;
+            }
+            &-name{
+                font-size: 10px;
+            }
+        }
+    }
+    &-right{
+        select{
+            background-color: $sub-color;
+            color: $white;
+            border-color: $alt-color;
+            border-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            width: 160px;
+            padding: 5px 10px;
+            outline: 0;
+            cursor: pointer;
+            &:hover{
+                background-color: $alt-color;
+            }
+        }
+    }
+}
+
+.elh-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 35px;
+    background-color: $alt-color;
+    &-left{
+        span{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    &-right{
+        i{
+            font-size: 16px;
+            color: $sb-9;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+.event-block{
+    margin-top: 3px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.event-block-head{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    font-size: 12px;
+    justify-items: stretch;
+    background-color: $sb-1;
+    padding: 5px 0 5px 9px;
+    .event-block-col{
+        text-align: center;
+    }
+}
+
+.event-block-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    font-size: 14px;
+    justify-items: stretch;
+    align-items: stretch;
+    background-color: $white;
+    border-top: 1px solid $sb-1;
+    .event-block-box{
+        @include flex-it(center, center);
+        border-left: 1px solid $sb-1;
+        color: $sb-6;
+        cursor: pointer;
+        &:hover{
+            color: $sb-2;
+            background-color: $sb-5;
+        }
+    }
+}
+
+.event-block-ca{
+    padding: 5px 5px 5px 12px;
+    min-width: calc(100% - 225px);
+    cursor: pointer;
+    @media only screen and (max-width: $breakpoint-phone){
+        font-size: 12px;
+    }
+    .eb-a{
+        @include flex-it;
+        margin-bottom: 2px;
+        &-name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-ico{
+            @include flex-it;
+            .eb-a-time{
+                color: $si-1;
+                margin-right: 5px;
+            }
+            img{
+                width: 15px;
+            }
+        }
+
+    }
+    .eb-b{
+        @include flex-it;
+        &-name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-ico{
+            @include flex-it;
+            .eb-b-num{
+                font-size: 10px;
+                margin-right: 7px;
+                color: $sb-17;
+            }
+            i{
+                color: $sb-9;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $sb-2;
+                }
+            }
+        }
+    }
+}
+
+
+
+// sbt3 or Sports BettingTab Column 3 styles below **************************************************
+
+.eventov-container{
+    background-image: url(../../img/banner-soccer-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: $white;
+    margin-top: 3px;
+    border-radius: 4px 4px 0 0;
+    .eventov-inner{
+        @include flex-it();
+        flex-direction: column;
+    }
+}
+
+.eventov-a{
+    text-align: center;
+    // display: inline-block;
+    background-color: $sb-18;
+    padding: 12px 24px; 
+    border-radius: 0 0 4px 4px;
+    &-head{
+        font-size: 14px;
+        font-weight: 900;
+        margin: 0px;
+    }
+    &-dt{
+        font-size: 12px;
+    }
+}
+
+.eventov-b{
+    width: 100%;
+    @include flex-it;
+    position: relative;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 18px 0;
+    &-in{
+        background-color: $sb-18;
+        border-radius: 4px;
+        width: 40%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        padding: 8px 0;
+    }
+    &-mid{
+        background-color: $sb-18;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 0 20px;
+        // position: absolute;
+        // left: 50%;
+        // transform: translateX(-50%);
+    }
+}
+
+
+.eventhd-container{
+    background-color: $si-1;
+    color: $white;
+    @include flex-it;
+    padding: 0 10px;
+    height: 35px;
+}
+
+.eventhd-a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 60px);
+}
+
+.eventhd-b{
+    &-stat{
+        margin-left: 10px;
+        img{
+            width: 16px;
+            filter: brightness(2);
+        }
+    }
+}
+
+// Event 3 styles
+
+.e-game-info{
+    margin: 5px 5px 0 5px;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: $sb-1;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    &-a{
+        width: 13px;
+        height: 13px;
+        margin: 5px 10px;
+    }
+    &-b{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+
+// Event 4 Styles below 
+
+
+.match-sort-container{
+    display: flex;
+    justify-content: space-between;
+    padding:  5px 5px 0 5px;
+}
+
+.match-btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    .match-btn{
+        font-size: 13px;
+        padding: 4px 10px 7px 10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        border-top: 3px solid transparent;
+        background-color: $sb-1;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:first-child{
+            position : relative;
+            font-size: 27px;
+            color: rgba(0,0,0,.79);
+            padding: 0;
+            width: 58px;
+            &::before{
+                position: absolute;
+                content: "\002605";
+                top: -8px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+        &:hover{
+            border-color: $sb-3;
+            background-color: $white;
+        }
+    }
+}
+
+
+.match-columns{
+    cursor: pointer;
+    .match-col-a{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            right: 28px;
+            top: 5px;
+            width: 8px;
+            height: 18px;
+            border-radius: 2px;
+            background-color: #292929;
+        }
+    }
+    .match-col-b{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 8px;
+            height: 18px;
+            border-radius: 2px;
+            background-color: #999;
+            transition: all .3s ease-in-out;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 8px;
+            height: 18px;
+            border-radius: 2px;
+            background-color: #999;
+            transition: all .3s ease-in-out;
+        }
+        &:hover{
+            &::before, &::after{
+                background-color: #292929;
+            }
+        }
+    }
+}
+
+
+.event5-inner{
+    padding: 5px;
+    padding-top: 0;
+}
+
+.data-box-container{
+    margin-bottom: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+.data-box-a{
+    .data-box-a-inner{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background-color: $sb-1;
+        color: rgba(0,0,0,.79);
+        align-items: center;
+        font-size: 13px;
+        padding: 8px 32px 9px 10px;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 32px;
+            width: 1px;
+            height: 35px;
+            background-color: $sb-4;
+            transition: all .3s ease-in-out;
+        }
+        .data-head{
+            font-weight: 700;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .data-arrow{
+            position: absolute;
+            padding: 5px 12px;
+            right: 0px;
+            font-size: 18px;
+            transform: rotate(-90deg);
+            cursor: pointer;
+        }
+        
+    }
+}
+
+.data-icons{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    .di-a{
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+    }
+    .di-b{
+        font-size: 14px;
+        display: flex;
+
+        img{
+            width: 13px;
+            height: 15px;
+            margin-left: 10px;
+            
+        }
+    }
+    .di-c{
+        width: 18px;
+        height: 18px;
+        margin-left: 10px;
+        margin-right: 27px;
+    }
+    .di-d{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "\002605";
+            top: -19px;
+            right: 0;
+            font-size: 25px;
+            color: #6B6B6D;
+        }
+        &:hover{
+            &::before{
+                color: #292929;
+            }
+        }
+        
+        
+    }
+
+}
+
+.data-box-b{
+    background-color: $white;
+    &-inner{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        border-top: 1px solid $sb-4;
+    }
+    .data-box-b-content{
+        display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        border-top: 1px solid $sb-4;
+    }
+}
+
+.data-card{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    cursor: pointer;
+    &-top{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &:hover{
+        background-color: $sb-5;
+    }
+    &-bottom{
+        color: $sb-6;
+    }
+    
+}
+
+.data-card-mid{
+    border-left: 1px solid $sb-4;
+    border-right: 1px solid $sb-4;
+}
+
+.data-card-container{
+    border-right: 1px solid $sb-4;
+    .data-card-head{
+        text-align: center;
+        color: rgba(0,0,0,.79);
+        background-color: $sb-4;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 8px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: calc(100% - 0.01px);
+    }
+    &:first-child{
+    }
+    .data-card{
+        border-bottom: 1px solid $sb-4;
+    }
+}
+
+
+
+// sbt4 or Sports BettingTab Column 4 styles below **************************************************
+
+
+// Betslip styles below ****
+
+.betslip-container{
+    margin: 3px;
+    .bets-num{
+        color: $sb-6;
+    }
+}
+
+.betslip-a{
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    &-head{
+        background-color: $sub-color;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        color: $white;
+        .bets-title{
+            font-size: 12px;
+        }
+        .bets-count{
+            width: 16px;
+            height: 16px;
+            font-size: 8px;
+            margin-left: 3px;
+            background-color: $sb-3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-sub{
+        background-color: $sb-7;
+        padding: 9px 8px 9px 5px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        select{
+            border: 0;
+            height: 22px;
+            border-radius: 4px;
+            background-color: $sb-1;
+            font-size: 12px;
+            outline: 0;
+        }
+        .bets-remove{
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+}
+
+
+.betslip-b{
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    font-size: 12px;
+    &-head{
+        background-color: $sb-1;
+        color: $sb-8;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        .bets-ico{
+            font-size: 16px;
+            i{
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+    &-sub{
+        background-color: $sb-7;
+        color: $sb-10;
+        padding: 8px;
+        .betslip-b-a{
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            .bets-mr{
+                font-weight: 500;
+                color: $sb-11;
+            }
+        }
+        .betslip-b-b{
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .betslip-b-c{
+            display: flex;
+            justify-content: flex-end;
+            span{
+                margin-left: 5px;
+            }
+            + .betslip-b-c{
+                border-top: 1px solid $sb-9;
+                margin-top: 6px;
+                padding-top: 6px;
+            }
+        }
+    }   
+        
+}
+
+
+.bets-left{
+    &-down{
+        font-size: 11px;
+    }
+}
+.bets-right{
+    input{
+        box-shadow: none;
+        font-size: 12px;
+        height: 30px;
+        width: 60px;
+        border-radius: 4px;
+        border: 0;
+        outline: 0;
+        padding: 0 8px;
+        text-align: right;
+        -moz-appearance: textfield;
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+
+.betslip-c{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+    &-head{
+        background-color: $sb-7;
+        color: $sb-10;
+        padding: 8px;
+        div:last-child{
+            border-top: 1px solid $sb-9;
+            padding-top: 5px;
+            
+        }
+        .betslip-c-a{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+        }
+    }
+    &-sub{
+        padding: 5px;
+        background-color: $sb-1;
+        border-radius: 0 0 4px 4px;
+        a{
+            display: block;
+            background-color: $base-con;
+            text-align: center;
+            font-size: 16px;
+            padding: 9px 0;
+            &:hover{
+                background-color: $sb-12;
+            }
+        }
+    }
+}
